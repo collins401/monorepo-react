@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "react",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "noEmit": true,
+    "module": "esnext",
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src", "vite-env.d.ts"],
+  "exclude": ["node_modules"]
+}
