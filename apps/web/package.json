@@ -13,6 +13,7 @@
     "eslint-config-custom": "workspace:*",
     "unplugin-auto-import": "^0.16.4",
     "tsconfig": "workspace:*",
+    "unoconfig": "workspace:*",
     "vite-plugin-pages": "^0.31.0"
   }
 }

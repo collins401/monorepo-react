@@ -24,6 +24,7 @@
     "prettier": "^2.8.8",
     "turbo": "latest",
     "typescript": "^5.0.2",
+    "unocss": "^0.53.1",
     "vite": "^4.3.9"
   },
   "packageManager": "pnpm@7.15.0",
