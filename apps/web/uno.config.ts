@@ -3,6 +3,8 @@ import myPreset from 'unoconfig'
 
 export default defineConfig({
   presets: [
-    myPreset({ /* preset options */ }),
-  ],
+    myPreset({
+      /* preset options */
+    })
+  ]
 })

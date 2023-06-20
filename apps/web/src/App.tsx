@@ -1,20 +1,14 @@
 import { Suspense } from 'react'
-import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import routes from 'virtual:generated-pages-react'
-
-import './App.css'
+import { Loading } from 'ui'
 
 function App() {
-  const Routes = () => {
-    const main = useRoutes(routes)
-    return main
-  }
+  const router = createBrowserRouter(routes)
   return (
-    <Router>
-      <Suspense fallback={<div>loading...</div>}>
-        <Routes />
-      </Suspense>
-    </Router>
+    <Suspense fallback={<Loading />}>
+      <RouterProvider router={router} />
+    </Suspense>
   )
 }
 

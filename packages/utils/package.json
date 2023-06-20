@@ -1,8 +1,10 @@
 {
-  "name": "tsconfig",
+  "name": "utils",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
+  "main": "index.ts",
+  "module": "type",
   "publishConfig": {
     "access": "public"
   }

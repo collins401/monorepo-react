@@ -1,4 +1,4 @@
 module.exports = {
   // This tells ESLint to load the config from the package `eslint-config-custom`
-  extends: ['custom/react', './.eslintrc-auto-import.json'],
+  extends: ['custom', './.eslintrc-auto-import.json'],
 }

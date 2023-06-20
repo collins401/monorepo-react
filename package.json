@@ -1,32 +1,53 @@
 {
+  "name": "turborepo-last",
   "private": true,
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint": "eslint . --fix ",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install",
+    "publish-packages": "turbo run build && changeset version && changeset publish"
   },
   "dependencies": {
+    "antd": "^5.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.13.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config-ts": "^0.39.5",
+    "@antfu/eslint-config-react": "^0.39.5",
+    "@changesets/cli": "^2.26.1",
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
     "@turbo/gen": "^1.10.3",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-legacy": "^4.0.4",
     "@vitejs/plugin-react": "^4.0.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.43.0",
     "eslint-config-custom": "workspace:*",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "turbo": "latest",
     "typescript": "^5.0.2",
     "unocss": "^0.53.1",
     "vite": "^4.3.9"
   },
-  "packageManager": "pnpm@7.15.0",
-  "name": "turborepo-last"
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix --ext",
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
 }
