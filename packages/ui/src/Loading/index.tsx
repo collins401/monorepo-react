@@ -3,7 +3,7 @@ import { Spin } from 'antd'
 
 export function Loading() {
   return (
-    <div className="text-center p-5 asd-loading">
+    <div className="text-center p-4">
       <Spin />
     </div>
   )
