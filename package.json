@@ -2,8 +2,9 @@
   "name": "turborepo-last",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
     "dev": "turbo run dev",
+    "build:web": "pnpm run --F web build:staging",
+    "build": "turbo run build",
     "lint": "eslint . --fix ",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install",
@@ -40,7 +41,7 @@
     "vite": "^4.3.9"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "*.{json,js,ts,tsx}": [
       "eslint --fix --ext",
       "prettier --write"
     ]
