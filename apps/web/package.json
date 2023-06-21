@@ -12,10 +12,8 @@
   },
   "devDependencies": {
     "@unocss/transformer-variant-group": "^0.53.1",
-    "eslint-config-custom": "workspace:*",
-    "tsconfig": "workspace:*",
+    "config": "workspace:*",
     "ui": "workspace:*",
-    "unoconfig": "workspace:*",
     "unplugin-auto-import": "^0.16.4",
     "vite-plugin-pages": "^0.31.0"
   }

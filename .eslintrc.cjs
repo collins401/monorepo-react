@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['custom'],
+  extends: ['@antfu/eslint-config-ts'],
 }

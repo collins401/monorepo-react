@@ -5,10 +5,7 @@
   "main": "./src/index.tsx",
   "types": "./src/index.tsx",
   "scripts": {
-    "build": "tsc && vite build",
     "coverage": "vitest run --coverage",
-    "dev": "vite",
-    "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui"
   },
@@ -19,9 +16,8 @@
     "@vitest/coverage-c8": "^0.32.2",
     "@vitest/coverage-v8": "^0.32.2",
     "@vitest/ui": "^0.32.2",
-    "eslint-config-custom": "workspace:*",
+    "config": "workspace:*",
     "jsdom": "^22.1.0",
-    "tsconfig": "workspace:*",
     "vitest": "^0.32.2"
   }
 }

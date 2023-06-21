@@ -1,0 +1,20 @@
+{
+  "name": "config",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "ts-base.json",
+    "ts-react.json",
+    "ts-react-lib.json",
+    "unocss.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
+}
