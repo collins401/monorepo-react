@@ -2,10 +2,10 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "composite": false,
     "module": "ESNext",
+    "composite": false,
     "declaration": true,
+    "target": "ESNext",
     "declarationMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,5 +18,6 @@
     "skipLibCheck": true,
     "strict": true
   },
+  "include": ["*.ts", "../utils/vitePlugin.ts"],
   "exclude": ["node_modules"]
 }

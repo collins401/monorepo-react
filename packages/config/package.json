@@ -1,13 +1,15 @@
 {
   "name": "config",
+  "type": "module",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
   "files": [
-    "ts-base.json",
-    "ts-react.json",
-    "ts-react-lib.json",
-    "unocss.ts"
+    "./ts-base.json",
+    "./ts-react.json",
+    "./ts-react-lib.json",
+    "./unocss.ts",
+    "./vitePlugin.ts"
   ],
   "publishConfig": {
     "access": "public"

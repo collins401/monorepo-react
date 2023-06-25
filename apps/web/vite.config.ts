@@ -1,9 +1,9 @@
 import { resolve } from 'node:path'
 import type { ConfigEnv, UserConfig } from 'vite'
-import legacy from '@vitejs/plugin-legacy'
-import react from '@vitejs/plugin-react'
 import Pages from 'vite-plugin-pages'
 import AutoImport from 'unplugin-auto-import/vite'
+import legacy from '@vitejs/plugin-legacy'
+import react from '@vitejs/plugin-react'
 import UnoCSS from 'unocss/vite'
 
 // https://vitejs.dev/config/
