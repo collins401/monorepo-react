@@ -14,7 +14,7 @@ export default function Index() {
       <Link to="/test">to demo</Link>
       <h1 className="text-blue-400">hello</h1>
       <h1 className="text-red-400">hello</h1>
-      <h1 className="hover:(text-primary text-40px) transition-all">hello hover</h1>
+      <h1 className="hover:(text-primary) transition-all">hello hover</h1>
       <h1 className="lg:(text-sm text-red-400)">hello</h1>
       <Header text="this is header" />
       <DatePicker />

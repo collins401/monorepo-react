@@ -9,7 +9,18 @@ interface IProps {
 const AntConfigProvider: React.FC<IProps> = props => {
   return (
     <StyleProvider hashPriority="high">
-      <ConfigProvider locale={zhCN}>{props.children}</ConfigProvider>
+      <ConfigProvider
+        locale={zhCN}
+        theme={{
+          components: {
+            Menu: {
+              itemSelectedBg: 'red'
+            }
+          }
+        }}
+      >
+        {props.children}
+      </ConfigProvider>
     </StyleProvider>
   )
 }
