@@ -11,3 +11,13 @@ body {
   background-color: #f7f7f7;
   color: rgba(0, 0, 0, 0.87)
 }
+#nprogress .bar {
+  background: #fff !important;
+}
+
+@supports (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a202c;
+    color: #fff;
+  }
+}

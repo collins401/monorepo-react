@@ -14,8 +14,8 @@
     "@unocss/transformer-variant-group": "^0.53.1",
     "config": "workspace:*",
     "ui": "workspace:*",
-    "utils": "workspace:*",
     "unplugin-auto-import": "^0.16.4",
+    "utils": "workspace:*",
     "vite-plugin-pages": "^0.31.0"
   }
 }
