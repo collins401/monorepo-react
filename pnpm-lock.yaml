@@ -1,9 +1,16 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 importers:
 
   .:
     dependencies:
+      '@ant-design/icons':
+        specifier: ^5.1.4
+        version: 5.1.4(react-dom@18.2.0)(react@18.2.0)
       antd:
         specifier: ^5.6.2
         version: 5.6.2(react-dom@18.2.0)(react@18.2.0)
@@ -94,14 +101,7 @@ importers:
         version: 4.3.9(@types/node@20.3.1)(terser@5.18.0)
 
   apps/web:
-    dependencies:
-      nprogress:
-        specifier: ^0.2.0
-        version: 0.2.0
     devDependencies:
-      '@types/nprogress':
-        specifier: ^0.2.0
-        version: 0.2.0
       '@unocss/transformer-variant-group':
         specifier: ^0.53.1
         version: 0.53.1
